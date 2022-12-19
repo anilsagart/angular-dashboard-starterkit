@@ -1,0 +1,52 @@
+.root {
+    padding: 30px;
+  
+    .head {
+      h3 {
+        color: #cf5f5f;
+        font-size: 22px;
+      }
+  
+      p {
+        color: #4a4a4a;
+        font-size: 15px;
+        font-weight: 400;
+      }
+    }
+  
+    .pipelineDiv {
+      text-align: end;
+      border: 1px solid #d6eeff;
+      border-radius: 8px;
+      opacity: 1;
+      padding: 20px 24px;
+  
+      .addNewPipeline {
+        button {
+          background: #2c9cf2;
+          border-radius: 8px;
+          opacity: 1;
+          &:active,
+          &:focus,
+          &:hover {
+            outline: none;
+          }
+        }
+      }
+    }
+  
+    .pipelineTable {
+      table {
+        width: 100%;
+        button {
+          &:active,
+          &:focus,
+          &:hover {
+            outline: none !important;
+            background: #f1f1f1;
+          }
+        }
+      }
+    }
+  }
+  

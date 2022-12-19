@@ -1,0 +1,73 @@
+.root {
+  height: 100%;
+  background: #ffffff;
+
+  .maincanvas{
+    padding-top: 60px;
+  }
+  .drawer {
+    width: 255px;
+
+    .header {
+      position: fixed;
+      justify-content: space-between;
+      border-bottom: 2px solid #326285;
+      position: fixed;
+      width: 254px;
+      background: #f1f1f1;
+      z-index: 1;
+
+      .visionetHeader {
+        color: #326285;
+        font-size: 18px;
+        width: 100%;
+        text-align-last: center;
+        line-height: 24px;
+
+        .line1 {
+          letter-spacing: 5px;
+          font-weight: bold;
+        }
+
+        .line2 {
+          font-weight: 300;
+          letter-spacing: 2px;
+        }
+      }
+    }
+
+    .navigations {
+      padding-top: 15px;
+      padding-left: 15px;
+      margin-top: 60px;
+
+      .closeBtn {
+        color: red;
+        font-weight: 600;
+        font-size: 23px;
+        margin-right: 10px;
+        position: fixed;
+        margin-left: 200px;
+        z-index: 1;
+        &:hover,
+        &:active,
+        &:focus {
+          color: red;
+        }
+      }
+    }
+  }
+
+  .main-content {
+    height: 100%;
+    width: 100%;
+
+    .drawerIcon {
+      color: #e6f0f8;
+    }
+  }
+
+  .headerWidth {
+    width: 100%;
+  }
+}

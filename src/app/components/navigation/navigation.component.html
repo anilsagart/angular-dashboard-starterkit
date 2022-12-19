@@ -1,0 +1,105 @@
+<div class="navigations pt-5">
+  <ul>
+    <li class="listName">
+      <a routerLink="/dashboard" routerLinkActive="active">
+        <span class="leftSideMenu">
+          <mat-icon class="dashboardImg">dashboard</mat-icon>
+          <span class="leftSideMenuName">Dashboard</span>
+        </span>
+      </a>
+    </li>
+    <li class="listName">
+      <a routerLink="/catalog" routerLinkActive="active">
+        <span class="leftSideMenu">
+          <mat-icon class="dashboardImg">library_books</mat-icon>
+          <span class="leftSideMenuName">Navigation</span>
+        </span>
+      </a>
+    </li>
+    <mat-accordion class="example-headers-align" multi>
+      <mat-expansion-panel class="infras-expansion">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <span class="leftSideMenu">
+              <mat-icon class="dashboardImg">view_module</mat-icon>
+              <span class="leftSideMenuName">Navigation</span>
+            </span>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <li>
+          <a routerLink="/infrastructure/clusters" routerLinkActive="active">
+            <span class="leftSideMenuName">Sub Navigation</span>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/infrastructure/cluster-templates" routerLinkActive="active"><span class="leftSideMenuName">Sub
+              Navigation</span></a>
+        </li>
+        <li>
+          <a routerLink="/infrastructure/namespaces" routerLinkActive="active"><span class="leftSideMenuName">Sub
+              Navigation</span></a>
+        </li>
+        <li>
+          <a routerLink="/infrastructure/blueprints" routerLinkActive="active"><span class="leftSideMenuName">Sub
+              Navigation</span></a>
+        </li>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <li class="listName">
+      <a routerLink="/backup-restore" routerLinkActive="active">
+        <span class="leftSideMenu">
+          <mat-icon class="dashboardImg">restore_page</mat-icon>
+          <span class="leftSideMenuName">Navigation</span>
+        </span>
+      </a>
+    </li>
+    <li class="listName">
+      <a routerLink="/aplications" routerLinkActive="active">
+        <span class="leftSideMenu">
+          <img class="appsImg dashboardImg" src="../../../assets/images/apps.png" />
+          <span class="leftSideMenuName">Navigation</span>
+        </span>
+      </a>
+    </li>
+    <li class="listName">
+      <a routerLink="/integrations" routerLinkActive="active">
+        <span class="leftSideMenu">
+          <img class="integrationImg dashboardImg" src="../../../assets/images/integration.png" />
+          <span class="leftSideMenuName">Navigation</span>
+        </span>
+      </a>
+    </li>
+    <li class="listName">
+      <a routerLink="/cost" routerLinkActive="active">
+        <span class="leftSideMenu">
+          <mat-icon class="dashboardImg"> monetization_on</mat-icon>
+          <span class="leftSideMenuName">Navigation</span>
+        </span>
+      </a>
+    </li>
+    <li class="listName">
+      <a routerLink="/opagatekeeper" routerLinkActive="active">
+        <span class="leftSideMenu">
+          <img class="opaImg dashboardImg" src="../../../assets/images/opa.png" />
+          <span class="leftSideMenuName">Navigation</span>
+        </span>
+      </a>
+    </li>
+    <li class="listName">
+      <a routerLink="/networkpolicy" routerLinkActive="active">
+        <span class="leftSideMenu">
+          <img class="networkImg dashboardImg" src="../../../assets/images/network.png" />
+          <span class="leftSideMenuName">Navigation</span>
+        </span>
+      </a>
+    </li>
+    <li class="listName">
+      <a routerLink="/servicemesh" routerLinkActive="active">
+        <span class="leftSideMenu">
+          <mat-icon class="dashboardImg">settings</mat-icon>
+          <span class="leftSideMenuName">Navigation</span>
+        </span>
+      </a>
+    </li>
+  </ul>
+</div>

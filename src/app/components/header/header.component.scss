@@ -1,0 +1,50 @@
+.mainHeaderDiv {
+    padding-left: 45px;
+
+    .headerDiv {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        // padding: 0;
+        // padding-left: 30px;
+
+        a {
+            color: #fff;
+            background: #4283B4 0% 0% no-repeat padding-box;
+            border-radius: 7px;
+            opacity: 1;
+            padding: 0px 8px;
+            padding-top: 9px;
+            padding-bottom: 3px
+        }
+
+        .profileClass {
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 35px;
+        .profileImg {
+            font-size: 45px;
+            padding-top: 4px;
+            color: #fff;
+            padding-right: 35px;
+
+        }
+
+        .profileName {
+            padding-top: 10px;
+            padding-left: 23px;
+            color: #E6F0F8;
+            opacity: 1;
+            padding-right: 10px;
+            font-weight: 400;
+        }
+
+        .profileArrow {
+            font-size: 30px;
+            padding-top: 12px;
+            padding-right: 10px;
+            color: #E6F0F8;
+        }
+    }
+}
+}

@@ -1,0 +1,31 @@
+<ngx-spinner type="ball-scale-multiple"></ngx-spinner>
+<mat-drawer-container [class.drawer-opened]="drawer.opened" class="root">
+    <mat-drawer #drawer class="drawer" mode="over" opened="false">
+        <mat-toolbar class="header">
+            <div class="visionetHeader"><span class="line1">App Name</span><br><span class="line2">Tag Line</span></div>
+        </mat-toolbar>
+        <div class="navigations">
+            <mat-icon class="close closeBtn" (click)="drawer.close()">close</mat-icon>
+            <app-navigation></app-navigation>
+        </div>
+    </mat-drawer>
+
+    <div class="main-content headerContent">
+        <mat-toolbar class="main header" *ngIf="loginStatus">
+            <mat-icon *ngIf="!drawer.opened" (click)="drawer.toggle()" class="drawerIcon"> menu </mat-icon>
+            <div class="headerWidth">
+                <app-header></app-header>
+            </div>
+        </mat-toolbar>
+
+        <div class="maincanvas">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+
+    <!-- <mat-toolbar class="main footer">
+        Footer
+    </mat-toolbar> -->
+</mat-drawer-container>
+
+<!-- <app-login *ngIf="!loginStatus"></app-login> -->

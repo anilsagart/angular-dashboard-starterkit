@@ -1,0 +1,81 @@
+// .mat-drawer-content {
+//   background: #eeedf1;
+// }
+.root {
+  background-color: #fff;
+  width: 35%;
+  // margin: 12% auto;
+  padding: 20px 0 0 0;
+  border-radius: 4px;
+  box-shadow: 0px 30px 50px 0px rgb(0 0 0 / 20%);
+  border: 1px solid #eeedf1;
+  position: absolute;
+  left: 33%;
+  top: 21%;
+
+  h2 {
+    font-weight: 400;
+    font-size: 21px;
+    letter-spacing: 4px;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+
+  form {
+    padding: 15px 75px;
+    padding-bottom: 32px;
+
+    .mat-form-field {
+      width: 100%;
+
+      .mat-form-field-appearance-outline .mat-form-field-wrapper {
+        margin: 0;
+      }
+    }
+
+    .error-Message {
+      span {
+        display: flex;
+        justify-content: space-between;
+        place-content: center;
+
+        p {
+          margin-bottom: 0px;
+        }
+      }
+
+      font-size: 11px;
+      margin: 0px;
+    }
+
+    .flowhref {
+      font-size: 14px;
+      padding-top: 10px;
+      cursor: pointer;
+    }
+
+    .forgotPwd {
+      text-align: end;
+    }
+
+    .loginBtnDiv {
+      text-align: center;
+      padding-top: 20px;
+
+      .loginBtn {
+        background: #2c9cf2;
+        border-radius: 8px;
+        opacity: 1;
+        outline: none;
+        color: #eeedf1;
+        padding: 0px 35px;
+
+        &:active,
+        &:focus,
+        &:hover {
+          outline: none;
+        }
+      }
+    }
+  }
+}

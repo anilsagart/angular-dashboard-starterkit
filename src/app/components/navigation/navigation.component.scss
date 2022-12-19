@@ -1,0 +1,93 @@
+.navigations {
+    ul {
+        padding: 0;
+
+        .listName {
+            list-style: none;
+            padding: 16px 25px;
+            &:active,
+            &:focus{
+                border-right: 8px solid #CF5F5F;
+            }
+
+            a {
+                color: #7D7D7D;
+                text-decoration: none;
+
+                &:active,
+                &:focus {
+                    color: #CF5F5F;
+                    font-weight: 500;
+                }
+
+                .leftSideMenu{
+                    display: flex;
+                }
+
+                .leftSideMenuName {
+                    font-size: 17px;
+                    padding-left: 22px;
+                    font-weight: 400;
+
+                    &:active,
+                    &:focus {
+                        color: #CF5F5F;
+                    }
+                }
+
+                // .dashboardImg{
+                //     background: url(../../../assets/images/dashboard-hl.png) no-repeat;
+                // }
+            }
+        }
+    }
+
+    mat-accordion{
+        mat-expansion-panel{
+            mat-expansion-panel-header{
+                &:active,
+                &:focus{
+                    border-right: 8px solid #CF5F5F;
+                }
+                mat-panel-title{
+                    .leftSideMenu{
+                        display: flex;
+                        color:#7D7D7D;
+                        &:active,
+                        &:focus {
+                            color: #CF5F5F;
+                        }
+
+                        .leftSideMenuName {
+                            font-size: 17px;
+                            padding-left: 22px;
+                            font-weight: 400;
+                        }
+                    }
+                    
+                }
+            }
+        }
+        li{
+            list-style: none;
+            padding: 16px 22px !important;
+            &:active,
+            &:focus{
+                border-right: 8px solid #CF5F5F;
+            }
+
+            a{
+                color: #7D7D7D;
+                text-decoration: none;
+                font-size: 14px;
+                padding-left: 22px;
+
+                &:active,
+                &:focus {
+                    color: #CF5F5F;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

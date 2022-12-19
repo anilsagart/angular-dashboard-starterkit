@@ -1,0 +1,38 @@
+<div class="root loginForm">
+  <h2>
+    <!-- <mat-icon>account_circle</mat-icon> -->
+    VISIONET CLOUD NATIVE
+  </h2>
+
+  <form [formGroup]="loginForm" class="form-container">
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-icon>email</mat-icon>
+      <mat-label>Username</mat-label>
+      <input matInput formControlName="username" placeholder="Username" required>
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-icon>lock</mat-icon>
+      <mat-label>Password</mat-label>
+      <input matInput type="password" formControlName="password" placeholder="Password" required>
+    </mat-form-field>
+    <div class="error-Message">
+      <mat-error *ngIf="loginError">
+        <span>
+          <p>{{errorMessage}}</p>
+          <!-- <p><mat-icon (click)="toggle()">close</mat-icon></p> -->
+        </span>
+      </mat-error>
+    </div>
+    <div class="row flowhref">
+      <div class="col-lg-6">
+        <span>Register</span>
+      </div>
+      <div class="col-lg-6" style="text-align: end;">
+        <span class="forgotPwd">Forgot Password?</span>
+      </div>
+    </div>
+    <div class="loginBtnDiv">
+      <button mat-raised-button (click)="login()" class="loginBtn">Login</button>
+    </div>
+  </form>
+</div>

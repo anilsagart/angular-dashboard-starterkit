@@ -1,0 +1,30 @@
+<div class="mainHeaderDiv">
+    <div class="row">
+        <div class="headerDiv">
+            <div class="col-lg-3 pt-2 mt-1">
+                <a routerLink="/dashboard" routerLinkActive="active">
+                    <mat-icon>home</mat-icon>
+                </a>
+            </div>
+
+            <div class="col-lg-6">
+            </div>
+
+            <div class="col-lg-3">
+                <div class="profileClass">
+                        <mat-icon class="profileImg">account_circle</mat-icon>
+                        <h3 class="profileName">{{userName}}</h3>
+                        <div>
+                            <mat-icon [matMenuTriggerFor]="menu" class="profileArrow">keyboard_arrow_down</mat-icon>
+                            <mat-menu class="logoutMenu" #menu="matMenu">
+                                <div mat-menu-item (click)="logout()">
+                                    <mat-icon>exit_to_app</mat-icon>
+                                    <span>Logout</span>
+                                </div>
+                            </mat-menu>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
