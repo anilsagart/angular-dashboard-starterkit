@@ -6,7 +6,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppMaterialModule } from './modules/app-material.module';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { HttpClientModule } from '@angular/common/http';
-import { ProgressBarModule } from "angular-progress-bar";
 import { LoginComponent } from './pages/login/login.component';
 
 import { NavigationComponent } from './components/navigation/navigation.component';
@@ -32,8 +31,6 @@ import { AppRoutingModule } from './modules/app-routing.module';
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
-    
-    ProgressBarModule,
     NgxDatatableModule.forRoot({
       messages: {
         emptyMessage: 'No data to display', 
